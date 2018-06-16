@@ -34,10 +34,13 @@
 	// Teraz Twoja kolej - w poniższej funkcji wpisz kod wykorzystujący jQuery, który sprawi że drugi akordeon będzie działał identycznie do pierwszego. 
 	
 	var accordionJQuery = function(){
+       $('#accordion-jquery h3').click(function(event){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+	    });
 		
-	};
-	
+    };
+    
 	accordionJQuery();
-	
 	
 })(); 
